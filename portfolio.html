@@ -1,0 +1,176 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>My Personal Portfolio</title>
+    <link rel="stylesheet" href="portfolio.css" />
+</body>
+</html>
+
+  </head>
+  <body>
+    <nav>
+      <ul>
+        <li><a href="#home">Home</a></li>
+        <li><a href="#about">About Me</a></li>
+        <li><a href="#skills">My Skills</a></li>
+        <li><a href="#projects">My Projects</a></li>
+      </ul>
+    </nav>
+<section id="home">
+    <img src="f9e0c697-8626-4482-bfb9-9315db44ade4.jpeg" alt="Profile Picture">
+    <div class="intro">
+        <h1>Esguerra, John Carlo</h1>
+        <h3>"Grind today, shine tomorrow."</h3>
+        <p>“My name is John Carlo T. Esguerra, a College student based in Quezon City. I’m actively involved in academic and technical projects, with interests in coding, software development, and creative communication. I value clarity, practical solutions, and adding a touch of wit to everyday interactions.”</p>
+    </div>
+      <div class="contact">
+    <h2>Contact Me</h2>
+    <p><strong>Email:</strong> esguerrajohncarlo@gmail.com</p>
+    <p><strong>Phone:</strong> +63 993 896 2534</p>
+    <p><strong>Location:</strong> Quezon City, Philippines</p>
+    <div class="socials">
+      <a href="https://www.facebook.com/share/1C1yTfrZ4Q/
+" target="_blank">Facebook</a> |
+      <a href="https://linkedin.com/in/yourprofile" target="_blank">LinkedIn</a> |
+      <a href="https://github.com/suition" target="_blank">GitHub</a>
+    </div>
+  </div>
+</section>
+<section id="about">
+  <h2>About Me</h2>
+  <p><strong>Course/Program:</strong> Associate in Computer Technology (ACT)</p>
+  <p><strong>School:</strong> Datamex College of Saint Adeline</p>
+  <p><strong><h2>Hobbies:</h2></strong></p>
+  <ul>
+    <li>Playing Mobile Games</li>
+    <li>Watching Movies</li>
+    <li>Listening to Music</li>
+    <li>Reading Technology Articles</li>
+  </ul>
+  <p><strong><h2>Interest:</h2></strong></p>
+  <ul>
+    <li>Tech & Coding</li>
+    <li>Academic & Creative</li>
+    <li>Music & Culture</li>
+    <li>Experimenting with Audio Tech</li>
+    <li>Exploring Consumer Electronics</li>
+  </ul>
+</section>
+<section id="skills">
+  <h2>My Skills</h2>
+  <ul>
+    <li>
+      <div class="skill-name">HTML</div>
+      <div class="logo-box">
+        <img src="html5-emblem-orange-shield-and-white-text-vector.jpg" alt="HTML Logo" class="skill-icon">
+      </div>
+    </li>
+    <li>
+      <div class="skill-name">CSS</div>
+      <div class="logo-box">
+        <img src="css_logo.jpeg" alt="CSS Logo" class="skill-icon">
+      </div>
+    </li>
+    <li>
+      <div class="skill-name">JavaScript</div>
+      <div class="logo-box">
+        <img src="JavaScript_Logo.jpg" alt="JavaScript Logo" class="skill-icon">
+      </div>
+    </li>
+    <li>
+      <div class="skill-name">Python</div>
+      <div class="logo-box">
+        <img src="4a00c62cc7372a4cfcb9688299ed51a6.jpg" alt="Python Logo" class="skill-icon">
+      </div>
+    </li>
+    <li>
+      <div class="skill-name">Video Editing</div>
+      <div class="logo-box">
+        <img src="f812eaec1f1adf0bd1e1b7f3852f8844.jpg" alt="Video Editing Icon" class="skill-icon">
+      </div>
+    </li>
+  </ul>
+</section>
+<section id="projects">
+  <h2>My Projects</h2>
+
+  <div class="project">
+    <h3>Project 1: E-Wallet Transaction History. Using Python</h3>
+        <p>The Transaction History serves as a record-keeping system inside the E‑wallet program. Every time a user sends money, the system automatically logs the details into a list of transactions. When the user selects View History, the program neatly displays all transactions in order, with numbering for easy reference. Alongside the list, the current balance is shown so users can track their remaining funds. This feature ensures transparency, accountability, and convenience by allowing users to review past activities, confirm successful transfers, and manage their spending habits.</p>
+    <button class="toggle-btn" onclick="toggleImages()">Click here to show the images</button>
+
+    <div id="project1-images" class="image-gallery">
+      <img src="Screenshot 2026-10-15 192246.png" alt="Python Project Screenshot 1">
+      <img src="Screenshot 2026-10-15 192259.png" alt="Python Project Screenshot 2">
+      <img src="Screenshot 2026-10-15 192306.png" alt="Python Project Screenshot 3">
+      <img src="Screenshot 2026-10-15 192403.png" alt="Python Project Screenshot 4">
+    </div>
+  </div>
+
+<div class="project">
+  <h3>Project 2: Web Design</h3>
+  <p>This is a web design project I built...</p>
+  <button class="toggle-btn" onclick="toggleImages('project2-images', this)">
+    Click here to show the images
+  </button>
+  <div id="project2-images" class="image-gallery">
+    <img src="project2_img1.png" alt="Project 2 Screenshot 1">
+    <img src="project2_img2.png" alt="Project 2 Screenshot 2">
+    <img src="project2_img3.png" alt="Project 2 Screenshot 3">
+  </div>
+</div>
+
+
+<div class="project">
+  <h3>Project 3: Database System</h3>
+  <p>This is a database project I built...</p>
+  <button class="toggle-btn" onclick="toggleImages('project3-images', this)">
+    Click here to show the images
+  </button>
+  <div id="project3-images" class="image-gallery">
+    <img src="project3_img1.png" alt="Project 3 Screenshot 1">
+    <img src="project3_img2.png" alt="Project 3 Screenshot 2">
+    <img src="project3_img3.png" alt="Project 3 Screenshot 3">
+  </div>
+</div>
+
+
+    <script>
+document.querySelectorAll('nav ul li a').forEach(anchor => {
+    anchor.addEventListener('click', function(e) {
+        e.preventDefault();
+        const targetId = this.getAttribute('href');
+        const targetElement = document.querySelector(targetId);
+
+        if (targetElement) {
+            targetElement.scrollIntoView({
+                behavior: 'smooth',
+                block: 'start'   
+            });
+        }
+    });
+});
+
+function toggleImages(projectId, btn) {
+  const gallery = document.getElementById(projectId);
+
+  if (gallery.classList.contains("show")) {
+    gallery.classList.remove("show");
+    gallery.style.display = "none";
+    btn.textContent = "Click here to show the images";
+  } else {
+    gallery.style.display = "block";
+    setTimeout(() => gallery.classList.add("show"), 10);
+    btn.textContent = "Click here to hide the images";
+  }
+}
+
+
+
+</script>
+
+  </body>
+  </script>
+</html>

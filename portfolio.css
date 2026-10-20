@@ -1,0 +1,163 @@
+body {
+  font-family: "Segoe UI", Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background: url(portfolio_background.jpeg) no-repeat center center fixed; /* background image */
+  background-size: cover; /* makes sure it fills the screen */
+  color: #333;
+}
+
+/* Optional overlay for readability */
+body::before {
+  content: "";
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(255, 255, 255, 0.7);
+  z-index: -1;
+}
+
+nav {
+  background: #222;
+  padding: 15px 30px;
+  position: sticky;
+  top: 0;
+}
+nav ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: flex-end;
+}
+nav ul li {
+  margin-left: 20px;
+}
+nav ul li a {
+  color: #fff;
+  text-decoration: none;
+  font-weight: bold;
+  transition: color 0.3s ease;
+}
+nav ul li a:hover {
+  color: #ff9800;
+}
+
+#home {
+  display: flex;
+  align-items: center;
+  padding: 80px 60px;
+  background: #fff;
+}
+#home img {
+  width: 300px;
+  height: 300px;
+  object-fit: cover;
+  border-radius: 12px;
+  margin-right: 50px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+}
+#home .intro {
+  flex: 1;
+}
+#home h1 {
+  font-size: 3em;
+  margin-bottom: 10px;
+  color: #222;
+  text-align: left;
+}
+#home h3 {
+  font-style: italic;
+  color: #ff9800;
+  margin-bottom: 20px;
+  text-align: left;
+}
+#home p {
+  max-width: 600px;
+  line-height: 1.6;
+}
+
+section h2 {
+  text-align: center;
+  font-size: 2em;
+  margin-bottom: 20px;
+  color: #222;
+  position: relative;
+}
+section h2::after {
+  content: "";
+  display: block;
+  width: 60px;
+  height: 3px;
+  background: #ff9800;
+  margin: 10px auto 0;
+}
+
+#about {
+  background: #fafafa;
+  padding: 60px;
+  text-align: center; /* centers the content */
+}
+
+#about p {
+  max-width: 700px;
+  margin: 10px auto;
+  line-height: 1.6;
+}
+
+#about ul {
+  list-style: none; /* removes default bullets */
+  padding: 0;
+  margin: 15px auto;
+  display: inline-block; /* keeps the list centered */
+  text-align: left; /* aligns items neatly */
+}
+
+#about ul li {
+  background: #ff9800;
+  color: #fff;
+  margin: 8px 0;
+  padding: 10px 20px;
+  border-radius: 20px;
+  font-weight: bold;
+  transition: transform 0.3s ease;
+}
+
+#about ul li:hover {
+  transform: scale(1.05);
+}
+
+#skills ul {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  padding: 0;
+}
+#skills ul li {
+  list-style: none;
+  background: #ff9800;
+  color: #fff;
+  margin: 10px;
+  padding: 15px 25px;
+  border-radius: 25px;
+  font-weight: bold;
+  transition: transform 0.3s ease;
+}
+#skills ul li:hover {
+  transform: scale(1.1);
+}
+
+#projects div {
+  margin: 20px auto;
+  max-width: 800px;
+  padding: 20px;
+  background: #fff;
+  border-left: 5px solid #ff9800;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+#projects h3 {
+  margin-bottom: 5px;
+  color: #ff9800;
+}
